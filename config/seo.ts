@@ -10,7 +10,11 @@ const s = templateCopy.seo;
 export const seo = {
   title: t(s.title),
   titleTemplate: t(s.titleTemplate),
-  description: event.seo?.description ?? t(s.description),
+  description: (() => {
+    const raw = event.seo?.description ?? t(s.description);
+    if (site.phone) return raw;
+    return raw.replace(/\s*Call\s+or enquire on WhatsApp\.?/i, "").trim();
+  })(),
   ogDescription: t(s.ogDescription),
   keywords: [...s.keywords.map(t), ...(event.seo?.keywords ?? [])],
   category: s.category,

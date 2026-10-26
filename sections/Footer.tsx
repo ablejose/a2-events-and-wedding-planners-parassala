@@ -9,6 +9,10 @@ const tel = (p: string) => `tel:${p.replace(/[^\d+]/g, "")}`;
 export default function Footer() {
   const year = new Date().getFullYear();
   const v = copy.visit;
+  const hasContact = Boolean(site.phone || site.whatsapp);
+  const visitBody = hasContact
+    ? t(v.body)
+    : "Drop by or send us a message — we'll walk you through menus, décor and dates.";
 
   return (
     <footer id="contact" className="bg-espresso text-ivory">
@@ -22,7 +26,7 @@ export default function Footer() {
             <h2 className="display mt-4" style={{ fontSize: "clamp(2rem, 3.8vw, 3.2rem)", color: "#fff" }}>
               {v.heading}
             </h2>
-            <p className="mt-4 max-w-md font-sans text-[0.95rem] font-light leading-relaxed text-ivory/70">{t(v.body)}</p>
+            <p className="mt-4 max-w-md font-sans text-[0.95rem] font-light leading-relaxed text-ivory/70">{visitBody}</p>
 
             <ul className="mt-8 space-y-4 font-sans text-sm text-ivory/85">
               <li className="flex items-start gap-3">
