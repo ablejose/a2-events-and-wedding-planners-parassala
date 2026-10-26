@@ -1,0 +1,39 @@
+{
+  "slug": "a2-events-and-wedding-planners-parassala",
+  "name": "A2 Events and Wedding Planners",
+  "shortName": "A2 Events and Wedding Planners",
+  "descriptor": "Event Management",
+  "address": "Nedumcode, Parassala, Parasuvaikkal, Keralam 695508",
+  "area": "Nedumcode",
+  "city": "Parassala",
+  "district": "Thiruvananthapuram",
+  "region": "Kerala",
+  "postalCode": "695508",
+  "geo": {
+    "lat": 8.362349499999999,
+    "lng": 77.1437255
+  },
+  "mapsLink": "https://maps.google.com/?cid=8528922436571804987",
+  "phone": "",
+  "whatsapp": "",
+  "hours": "Open 10 am – 5 pm · all days",
+  "opens": "10:00",
+  "closes": "17:00",
+  "rating": 5,
+  "reviewCount": 11,
+  "reviews": [
+    {
+      "name": "Femy K das",
+      "rating": 5,
+      "quote": "Affordable price. Services excellent"
+    }
+  ],
+  "gallery": [
+    "gallery/01.webp",
+    "gallery/02.webp",
+    "gallery/03.webp",
+    "gallery/04.webp",
+    "gallery/05.webp"
+  ],
+  "url": "https://a2-events-and-wedding-planners-para.vercel.app"
+}
